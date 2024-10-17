@@ -1,0 +1,55 @@
+<div class="main-wrapper">
+  <div class="back-btn">
+    <button type="button" class="btn btn-light" (click)="goBack()">Back</button>
+  </div>
+  <div class="country-details">
+    <div class="country-flag">
+      <img [src]="country.flags.png" alt="flag" class="flag-image" />
+    </div>
+    <div class="name-details">
+      <h2 class="country-name">
+        <strong>
+          {{ country.name.common }}
+        </strong>
+      </h2>
+      <div class="other-details">
+        <p class="native-name">
+          <strong>Native name: </strong>
+          {{ country.name.official }}
+        </p>
+        <p class="population">
+          <strong>Population: </strong>
+          {{ country.population }}
+        </p>
+        <p class="region">
+          <strong>Region: </strong>
+          {{ country.region }}
+        </p>
+        <p class="capital">
+          <strong>Capital: </strong>
+          {{ country.capital }}
+        </p>
+        <p class="top-level-domain">
+          <strong>Top Level Domain: </strong>
+          {{ country.tld }}
+        </p>
+        <p class="currencies">
+          <strong>Currenies: </strong>
+          <span *ngFor="let currency of country?.currencies | keyvalue">
+            {{ currency.value.name }} ({{ currency.key }})
+          </span>
+        </p>
+        <p class="languages">
+          <strong>Languages: </strong>
+          <span *ngFor="let language of country?.languages | keyvalue">
+            {{ language.value }} ({{ language.key }})
+          </span>
+        </p>
+        <p class="border-countries">
+          <strong>Border Countries: </strong>
+          {{ country.borders }}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

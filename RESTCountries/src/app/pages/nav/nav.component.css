@@ -1,0 +1,28 @@
+.navigation {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 6px -6px #222;
+  width: 100%;
+  font-size: 14px;
+  height: 100px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.title {
+  position: absolute;
+  left: 150px;
+  font-weight: bold;
+  top: 40px;
+  text-decoration: none;
+  color: #222;
+  font-size: 24px;
+}
+
+.change-theme-btn {
+  position: absolute;
+  right: 100px;
+  top: 40px;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+}

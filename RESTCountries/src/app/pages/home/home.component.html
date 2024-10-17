@@ -1,0 +1,91 @@
+<div class="main-wrapper">
+  <div class="sear-and-filter-bar">
+    <div class="search-bar">
+      <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-search"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+            />
+          </svg>
+        </span>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search for a country..."
+          aria-label="Country"
+          aria-describedby="addon-wrapping"
+          [(ngModel)]="searchTerm"
+          (keyup)="onSearch()"
+        />
+      </div>
+    </div>
+    <div class="filter-bar">
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <a class="dropdown-item" (click)="onSelectedContinent('Africa')"
+              >Africa</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" (click)="onSelectedContinent('Americas')"
+              >America</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" (click)="onSelectedContinent('Asia')"
+              >Asia</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" (click)="onSelectedContinent('Europe')"
+              >Europe</a
+            >
+          </li>
+          <li>
+            <a class="dropdown-item" (click)="onSelectedContinent('Oceania')"
+              >Oceania</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="countries-list">
+    <ul class="countries-ul">
+      <li class="countries-items" *ngFor="let country of filteredCountries">
+        <a
+          class="card-link"
+          [routerLink]="['/singe-card', country.name.common]"
+        >
+          <img [src]="country.flags.png" alt="flag" />
+          <h2 class="country-name">
+            {{ country.name.common }}
+          </h2>
+          <p class="population">
+            <strong>Population: </strong>{{ country.population }}
+          </p>
+          <p class="region"><strong>Region: </strong>{{ country.region }}</p>
+          <p class="capital"><strong>Capital: </strong>{{ country.capital }}</p>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+<!-- click na karticu -> da se otvore detalji države u novom componentu i rijesiti novi search bug -->

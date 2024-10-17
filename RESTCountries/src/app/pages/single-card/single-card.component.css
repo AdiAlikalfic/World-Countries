@@ -1,0 +1,38 @@
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.back-btn {
+  margin: 20px;
+  width: 100px;
+}
+
+.btn-light {
+  box-shadow: #00000033 0 8px 24px;
+}
+
+.country-details {
+  display: flex;
+  justify-content: center;
+}
+
+.country-flag {
+  width: 600px;
+  height: 350px;
+}
+
+.flag-image {
+  width: 600px;
+  height: 350px;
+}
+
+.name-details {
+  margin: 20px;
+}
+
+.other-details {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}

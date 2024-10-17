@@ -1,0 +1,138 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: Nunito Sans;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .navigation {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .navigation .title {
+  color: white;
+}
+.dark-mode .navigation .change-theme-btn {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode
+  .main-wrapper
+  .sear-and-filter-bar
+  .search-bar
+  .input-group
+  .input-group-text {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode
+  .main-wrapper
+  .sear-and-filter-bar
+  .search-bar
+  .input-group
+  .form-control {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode
+  .main-wrapper
+  .sear-and-filter-bar
+  .filter-bar
+  .dropdown
+  .dropdown-toggle {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode
+  .main-wrapper
+  .sear-and-filter-bar
+  .filter-bar
+  .dropdown
+  .dropdown-menu {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode
+  .main-wrapper
+  .sear-and-filter-bar
+  .filter-bar
+  .dropdown
+  .dropdown-menu
+  .dropdown-item {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode
+  .main-wrapper
+  .sear-and-filter-bar
+  .filter-bar
+  .dropdown
+  .dropdown-menu
+  li
+  :hover {
+  background-color: #79747458;
+}
+
+.dark-mode
+  .main-wrapper
+  .countries-list
+  .countries-ul
+  .countries-items
+  .card-link
+  .country-name {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode
+  .main-wrapper
+  .countries-list
+  .countries-ul
+  .countries-items
+  .card-link
+  .population {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode
+  .main-wrapper
+  .countries-list
+  .countries-ul
+  .countries-items
+  .card-link
+  .region {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode
+  .main-wrapper
+  .countries-list
+  .countries-ul
+  .countries-items
+  .card-link
+  .capital {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .main-wrapper .btn-light {
+  background-color: #1e1e1e;
+  color: white;
+}
